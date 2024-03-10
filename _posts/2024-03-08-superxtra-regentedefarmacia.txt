@@ -1,0 +1,17 @@
+---
+
+layout: post
+company: Super Xtra
+title: Regente de Farmacia
+description: Se necesita Regente de Farmacia y Asistente en Farmacia
+requirements: Idoneidad - Licenciatura en Farmacia para Regente - Técnico en Farmacia para Asistente
+contact_email: 
+contact_whatsapp: 
+contact_phone: 
+contact_url: https://forms.office.com/Pages/ResponsePage.aspx?id=7SqU6tIirke3xGWNPHLRUoRob1_uo9xDsWbWWJEmWjFURDFIUlo0WUI5NTU0SjYxRUJQQUc0Q0tYRS4u&origin=QRCode
+province: Panamá
+tags: [ farmacia ]
+category: salud_belleza
+source: ig
+
+---

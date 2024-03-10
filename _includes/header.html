@@ -1,0 +1,81 @@
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+
+
+{% if page.url != "/" %}
+<header>
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</header>
+{% else %}
+<header class="header-section {% if page.cover-img %}has-img{% endif %}"
+  style="background: url(/assets/img/bg.svg);background-repeat: no-repeat;background-size: cover;background-color: #fff;">
+  <div class="intro-header {% if page.cover-img %} big-img {% endif %}">
+
+    <div class="container-md">
+      <div class="row">
+        <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+          <div class="{{ include.type }}-heading">
+            <h1 class="home-cover-brand">Vacantes Panamá</h1>
+            <hr class="small" style="border-color: #999;">
+            <span class="{{ include.type }}-subheading" style="color:#999;">Tu lista de empleos en Panamá</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</header>
+
+{% endif %}
+
+
+<section>
+  <div style="padding-top: 15px;"></div>
+  <div class="container">
+      <div class="form-row">
+        
+          <div class="col-9 col-md-8 col-xl-10 offset-md-1">
+          <form action="/search/" method="get">
+            <div class="form-group has-search">
+              <span class="fa fa-search form-control-feedback" style="line-height: 2.5rem;"></span>
+              <input class="form-control input-block-level form-control-md" type="text" required="" autocomplete="off" placeholder="Buscar empleo"
+                id="search-box" name="query">
+            </div>
+          </form>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-secondary" style="background-color: #587A22;" id="job-cats-button"><i style="font-size:24px" class="fas">&#xf03a;</i></button>
+        </div>
+      </div>
+    </form>
+
+
+    <div style="padding-top: 15px;"></div>
+    <div id="job-cats-content" style="display: none;">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <h2 style="color: #7F96CF;">Empleos por área:</h2>
+          <hr style="width: 40%;margin-left:0px;margin-top: -2px;border-top: 2px solid #ccc;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 offset-md-1">
+
+          {% for category in site.data.categories.menu %}
+          <i class="vignette"></i>&nbsp;<a href="{{ category[1] }}">{{ category[0] }}</a><br>
+          {% endfor %}
+       
+        </div>
+
+      </div>
+    
+    </div>
+</section>

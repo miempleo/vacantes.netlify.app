@@ -1,0 +1,17 @@
+---
+
+layout: post
+company: Medika Laser
+title: Ayudante General
+description: Clínica en San Francisco busca persona para mantenimiento, mensajería y valet parking
+requirements: Entre 23 a 45 años - Saber estacionar autos y manejar moto - Licencia de manejo - Conocimiento en jardinería
+contact_email: 
+contact_whatsapp: 63172857
+contact_phone: 
+contact_url: 
+province: Panamá
+tags: [ jardinero conductor chofer mensajero ]
+category: oficios
+source: encuentra24
+
+---

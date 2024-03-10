@@ -1,0 +1,17 @@
+---
+
+layout: post
+company: CPG Panamá
+title: Community Manager
+description: Se necesita persona con conocimiento en diseño grafico y manejo de redes sociales
+requirements: Proactivo (a) - Responsable - Puntual - Honesto (a)
+contact_email: 
+contact_whatsapp: 61890534
+contact_phone: 
+contact_url: 
+province: Panamá
+tags: [ rrss ]
+category: mkt_ventas
+source: encuentra24
+
+---

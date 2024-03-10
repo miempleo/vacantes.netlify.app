@@ -1,0 +1,13 @@
+###############################################
+# --- List of job categories and their links --- #
+###############################################
+
+menu:
+  Marketing y ventas: "/vacantes/marketing-y-ventas"
+  Salud y belleza: "/vacantes/salud-y-belleza"
+  Administración: "/vacantes/administracion"
+  Seguridad y oficios varios: "/vacantes/seguridad-y-oficios-varios"
+  Gastronomía y Turismo: "/vacantes/gastronomia-y-turismo"
+  Transporte: "/vacantes/transporte"
+  Tecnología y programación: "/vacantes/tecnologia-y-programacion"
+  Educación: "/vacantes/educacion"

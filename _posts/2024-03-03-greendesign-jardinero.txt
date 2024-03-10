@@ -1,0 +1,17 @@
+---
+
+layout: post
+company: Green Design
+title: Jardinero
+description: Mantenimientos de jardines, siembra de plantas, riego de áreas verdes
+requirements: Un año de experiencia - Dedicación para cuidado de plantas - Delicadeza para el corte y poda de plantas - Honrado - Responsable - Honesto
+contact_email: 
+contact_whatsapp: 60114756
+contact_phone: 
+contact_url: 
+province: Panamá
+tags: [ jardinería ]
+category: oficios
+source: encuentra24
+
+---

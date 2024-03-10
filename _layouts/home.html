@@ -1,0 +1,103 @@
+---
+layout: page
+---
+
+{{ content }}
+<div style="padding-top: 4px;"></div>
+<h2 style="color: #7F96CF;">Empleos Recientes:</h2>
+<hr style="width: 40%;margin-left:0px;margin-top: -2px;border-top: 2px solid #ccc;">
+
+
+
+
+{% assign posts = paginator.posts | default: site.posts %}
+
+
+<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+<ul class="posts-list list-unstyled" role="list">
+  {% for post in posts %}
+  {% assign mod = forloop.index | modulo:2 %}
+  {% if mod == 0 %}
+    {% assign color = "255,0,0,0" %}
+  {% else %}
+    {% assign color = "250,248,248,0.5" %}
+  {% endif %}
+
+  <li class="post-preview" id="job-id-{{forloop.index}}"> 
+    <article>
+      <!--<div class="job-entry" id="{{forloop.index}}" style="cursor: pointer;">-->
+      <a href="#job-{{forloop.index}}" class="job-entry" id="{{forloop.index}}" style="display: block;">  
+      <h2 class="post-title">{{ post.title | strip_html }}</h2>
+      <small>
+        {% assign date_format = site.date_format | default: "%d-%m-%Y" %}
+        Publicado: {{ post.date | date: date_format }} 
+      </small>
+
+      {% if post.description %}
+      <div class="post-entry"> {{ post.description | strip_html }}</div>
+      {% endif %}
+
+    </a><!--clickeable-->
+      <div id="job-details-{{forloop.index}}" style="display: none;">
+          {% if post.company %}
+          <div><strong>Empresa:</strong> {{ post.company | strip_html }}</div>
+          {% endif %}
+
+          {% if post.requirements %}
+          <div><strong>Requisitos:</strong></div>
+          <ul>
+            {% assign requisitos = post.requirements | split: "-" %}
+            {% for requisito in requisitos %}
+            <li>
+              {{- requisito -}}
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          <div style="margin-top:5px;"><strong>Contacto:</strong><br />
+            {% if post.contact_whatsapp %}
+          <a href="https://api.whatsapp.com/send?phone=507{{ post.contact_whatsapp | strip_html }}"
+              target="_blank"><div style="display: inline-flex;"><img src="/assets/img/icon-whatsapp.svg" width="20px" alt="WhatsApp">&nbsp;{{
+              post.contact_whatsapp | strip_html }}</div></a>
+          {% endif %}
+            {% if post.contact_phone %}
+            {{ post.contact_phone | strip_html }}<br />
+            {% endif %}
+            {% if post.contact_email %}
+            <a href="mailto:{{ post.contact_email | strip_html }}"><div style="display: inline-flex;"><img src="/assets/img/icon-mail.svg" width="20px" alt="email">&nbsp;{{ post.contact_email | strip_html }}</div></a>
+            <br />
+            {% endif %}
+            {% if post.contact_url %}
+            <a href="{{ post.contact_url | strip_html }}"
+              target="_blank"><div style="display: inline-flex;"><img src="/assets/img/icon-url.svg" width="20px" alt="URL">&nbsp;{{ post.contact_url | truncate: 40 }}</div></a>
+            {% endif %}
+          </div>
+      </div>
+    </article>
+
+
+
+  </li>
+  {% endfor %}
+</ul>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pagination main-pager">
+  {% if paginator.previous_page %}
+  <li class="page-item previous">
+    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
+      <i class="fas fa-arrow-left" alt="Nuevos"></i>
+      <span class="d-none d-sm-inline-block">Nuevos</span>
+    </a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="page-item next">
+    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
+      <span class="d-none d-sm-inline-block">Antiguos</span>
+      <i class="fas fa-arrow-right" alt="Antiguos"></i>
+    </a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}

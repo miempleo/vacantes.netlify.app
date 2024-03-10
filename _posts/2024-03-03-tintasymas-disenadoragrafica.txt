@@ -1,0 +1,17 @@
+---
+
+layout: post
+company: Tintas y Más
+title: Diseñadora Gráfica
+description: Se solicita chica con conocimiento de diseño gráfico marketing y manejo de redes sociales para tiempo parcial
+requirements: 
+contact_email: 
+contact_whatsapp: 67268407
+contact_phone: 
+contact_url: 
+province: Panamá
+tags: [ diseño rrss photoshop illustrator redes ]
+category: mkt_ventas
+source: encuentra24
+
+---
