@@ -14,7 +14,7 @@
 
   {% capture title %}
     {%- if site.title and site.title-on-all-pages and (site.title != pagetitle) -%}
-      {{ pagetitle }} | {{ site.title }}
+      {{ pagetitle }}
     {%- else -%}
       {{ pagetitle }}
     {%- endif -%}
@@ -31,7 +31,7 @@
     {%- endif -%}
   {% endcapture %}
 
-  <title>{{ title }}</title>
+  <title>{{ title }} - Vacantes Panamá</title>
 
   {% capture author %}
     {%- if page.author -%}

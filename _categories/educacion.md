@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /vacantes/educacion/
-title: Empleos como docentes, educadores, tutores y afines en Panamá
-title_page: Empleos en educación
+permalink: /empleos/educacion/
+subtitle: Empleos como docentes, educadores, tutores y afines en Panamá
+title: Empleos en educación
 ---
 
 {% assign category = 'edu' %}

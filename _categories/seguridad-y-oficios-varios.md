@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /vacantes/seguridad-y-oficios-varios/
-title: Empleos en seguridad, vigilantes, domésticas, niñeras y oficios varios
-title_page: Seguridad y oficios varios
+permalink: /empleos/seguridad-y-oficios-varios/
+subtitle: Empleos en seguridad, vigilantes, domésticas, niñeras y oficios varios
+title: Seguridad y oficios varios
 
 ---
 

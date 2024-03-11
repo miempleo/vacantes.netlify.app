@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /vacantes/marketing-y-ventas/
-title: Empleos en Marketing, diseño gráfico, community managers y vendedores en Panamá
-title_page: Empleos en marketing y ventas
+permalink: /empleos/marketing-y-ventas/
+subtitle: Empleos en Marketing, diseño gráfico, community managers y vendedores en Panamá
+title: Empleos en marketing y ventas
 
 ---
 

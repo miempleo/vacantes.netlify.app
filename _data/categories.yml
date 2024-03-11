@@ -3,11 +3,11 @@
 ###############################################
 
 menu:
-  Marketing y ventas: "/vacantes/marketing-y-ventas"
-  Salud y belleza: "/vacantes/salud-y-belleza"
-  Administración: "/vacantes/administracion"
-  Seguridad y oficios varios: "/vacantes/seguridad-y-oficios-varios"
-  Gastronomía y Turismo: "/vacantes/gastronomia-y-turismo"
-  Transporte: "/vacantes/transporte"
-  Tecnología y programación: "/vacantes/tecnologia-y-programacion"
-  Educación: "/vacantes/educacion"
+  Marketing y ventas: "/empleos/marketing-y-ventas"
+  Salud y belleza: "/empleos/salud-y-belleza"
+  Administración: "/empleos/administracion"
+  Seguridad y oficios varios: "/empleos/seguridad-y-oficios-varios"
+  Gastronomía y Turismo: "/empleos/gastronomia-y-turismo"
+  Transporte: "/empleos/transporte"
+  Tecnología y programación: "/empleos/tecnologia-y-programacion"
+  Educación: "/empleos/educacion"

@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /vacantes/transporte/
-title: Empleos como choferes de camión, motorizados de servicio delivery y más en Panamá
-title_page: Empleos en transporte
+permalink: /empleos/transporte/
+subtitle: Empleos como choferes de camión, motorizados de servicio delivery y más en Panamá
+title: Empleos en transporte
 ---
 
 {% assign category = 'drive' %}
