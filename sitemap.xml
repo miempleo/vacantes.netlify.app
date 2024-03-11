@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>https://vacantes.netlify.app/</loc>
+</url>
+<url>
+  <loc>https://vacantes.netlify.app/empleos/marketing-y-ventas</loc>
+</url>
+<url>
+  <loc>https://vacantes.netlify.app/empleos/salud-y-belleza</loc>
+</url>
+<url>
+  <loc>https://vacantes.netlify.app/empleos/administracion</loc>
+</url>
+<url>
+  <loc>https://vacantes.netlify.app/empleos/seguridad-y-oficios-varios</loc>
+</url>
+<url>
+  <loc>https://vacantes.netlify.app/empleos/gastronomia-y-turismo</loc>
+</url>
+<url>
+  <loc>https://vacantes.netlify.app/empleos/transporte</loc>
+</url>
+<url>
+  <loc>https://vacantes.netlify.app/empleos/tecnologia-y-programacion</loc>
+</url>
+<url>
+  <loc>https://vacantes.netlify.app/empleos/educacion</loc>
+</url>
+</urlset>

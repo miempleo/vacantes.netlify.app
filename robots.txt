@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /search
+Sitemap: https://vacantes.netlify.app/sitemap.xml
+

@@ -31,7 +31,7 @@
     {%- endif -%}
   {% endcapture %}
 
-  <title>{{ title }} - Vacantes Panamá</title>
+  <title>{{ title }} {% if page.url != "/" %}- Vacantes Panamá{% else %}-Tu lista de empleos en todo Panamá{% endif %}</title>
 
   {% capture author %}
     {%- if page.author -%}
