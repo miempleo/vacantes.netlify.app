@@ -3,12 +3,9 @@ layout: page
 ---
 
 {{ content }}
-<div style="padding-top: 4px;"></div>
-<h2 style="color: #7F96CF;">Empleos Recientes:</h2>
-<hr style="width: 40%;margin-left:0px;margin-top: -2px;border-top: 2px solid #ccc;">
 
 
-
+<div class="title-guide">Empleos Recientes:</div>
 
 {% assign posts = paginator.posts | default: site.posts %}
 
@@ -58,6 +55,7 @@ layout: page
           <a href="https://api.whatsapp.com/send?phone=507{{ post.contact_whatsapp | strip_html }}"
               target="_blank"><div style="display: inline-flex;"><img src="/assets/img/icon-whatsapp.svg" width="20px" alt="WhatsApp">&nbsp;{{
               post.contact_whatsapp | strip_html }}</div></a>
+              <div style="clear: both;"></div>
           {% endif %}
             {% if post.contact_phone %}
             {{ post.contact_phone | strip_html }}<br />

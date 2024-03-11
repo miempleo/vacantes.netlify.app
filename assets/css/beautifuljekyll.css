@@ -2,7 +2,7 @@
 layout: null
 ---
 
-@import url("pygment_highlights.css");
+/*@import url("pygment_highlights.css");*/
 
 /* --- General --- */
 
@@ -628,11 +628,21 @@ footer .footer-custom-content {
   font-weight: 800;
 }
 
+.title-heading h1, .title-guide{
+  font-family: "Vazirmatn", sans-serif;
+  font-optical-sizing: auto;
+  color: #7F96CF;
+  font-size: 1.875rem;
+  font-weight: 100;
+}
+
 @media (min-width: 768px) {
   .post-preview .post-title {
     /*font-size: 2.25rem;*/
     font-size: 1.875rem;
   }
+
+
 }
 
 /* --- Tags --- */

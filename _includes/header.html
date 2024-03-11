@@ -62,19 +62,21 @@
     <div id="job-cats-content" style="display: none;">
       <div class="row">
         <div class="col-md-10 offset-md-1">
-          <h2 style="color: #7F96CF;">Empleos por área:</h2>
-          <hr style="width: 40%;margin-left:0px;margin-top: -2px;border-top: 2px solid #ccc;">
+          <div class="title-guide">Empleos por área:</div>
+          <div style="padding-bottom: 10px;"></div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 offset-md-1">
 
           {% for category in site.data.categories.menu %}
-          <i class="vignette"></i>&nbsp;<a href="{{ category[1] }}">{{ category[0] }}</a><br>
+          <a href="{{ category[1] }}"><div style="display:block;"><img src="/assets/img/icon-folder.svg" width="20px" alt="email">&nbsp;{{ category[0] }}<div></a>
+            <div style="clear: both;"></div>
           {% endfor %}
        
         </div>
 
+        <div style="padding-bottom: 20px;"></div>
       </div>
     
     </div>
