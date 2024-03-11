@@ -18,9 +18,9 @@
     {% assign color = "250,248,248,0.5" %}
   {% endif %}
 
-<li class="post-preview" style="background-image: linear-gradient(to right, white,rgba({{color}}) 20%);"> 
+  <li class="post-preview" id="job-id-{{forloop.index}}"> 
   <article>
-    <div class="job-entry" id="{{forloop.index}}" style="cursor: pointer;">
+    <a href="#job-{{forloop.index}}" class="job-entry" id="{{forloop.index}}" style="display: block;">  
     <h2 class="post-title">{{ post.title | strip_html }}</h2>
     <small>
       {% assign date_format = site.date_format | default: "%d-%m-%Y" %}
@@ -31,7 +31,7 @@
     <div class="post-entry"><strong></strong> {{ post.description | strip_html }}</div>
     {% endif %}
 
-  </div><!--clickeable-->
+  </a><!--clickeable-->
     <div id="job-details-{{forloop.index}}" style="display: none;">
         {% if post.company %}
         <div class="post-entry"><strong>Empresa:</strong> {{ post.company | strip_html }}</div>
