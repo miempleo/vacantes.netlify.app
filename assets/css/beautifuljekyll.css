@@ -162,8 +162,26 @@ color: #aaa;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+  color: #7A6122;
 }
 
+.bi::before {
+  content: "";
+  display: inline-block;
+  background-image: url('data:image/svg+xml,%3Csvg%20viewBox%3D%22-2.4%20-2.4%2028.80%2028.80%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20stroke%3D%22%23ffffff%22%3E%3Cg%20id%3D%22SVGRepo_bgCarrier%22%20stroke-width%3D%220%22%3E%3Crect%20x%3D%22-2.4%22%20y%3D%22-2.4%22%20width%3D%2228.80%22%20height%3D%2228.80%22%20rx%3D%220%22%20fill%3D%22%23587A22%22%20strokewidth%3D%220%22%3E%3C%2Frect%3E%3C%2Fg%3E%3Cg%20id%3D%22SVGRepo_tracerCarrier%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fg%3E%3Cg%20id%3D%22SVGRepo_iconCarrier%22%3E%20%3Cpath%20d%3D%22M4%2017H11%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%20%3Cpath%20d%3D%22M4%2012L11%2012%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%20%3Cpath%20d%3D%22M4%207L11%207%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%20%3Cpath%20d%3D%22M17%204L17%2020M17%204L14%208M17%204L20%208M17%2020L20%2016M17%2020L14%2016%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%20%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0px;
+}
+
+.demo {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='-2.4 -2.4 28.80 28.80' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23ffffff'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3Crect x='-2.4' y='-2.4' width='28.80' height='28.80' rx='0' fill='%23587A22' strokewidth='0'%3E%3C/rect%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M4 17H11' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M4 12L11 12' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M4 7L11 7' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3Cpath d='M17 4L17 20M17 4L14 8M17 4L20 8M17 20L20 16M17 20L14 16' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  background-repeat: no-repeat;
+}
 
 /* Comments */
 
@@ -451,11 +469,7 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 3.125rem;
   font-size: 0.875rem;
-  background-color: {{ site.footer-col | default: "#EAEAEA" }};
-  {% if site.footer-img %}
-    background-image: url({{ site.footer-img | relative_url }});
-    background-attachment: fixed;
-  {% endif %}
+  background-color: #F7F8FC;
 }
 
 footer p.text-muted {
@@ -631,7 +645,7 @@ footer .footer-custom-content {
 .title-heading h1, .title-guide{
   font-family: "Vazirmatn", sans-serif;
   font-optical-sizing: auto;
-  color: #7F96CF;
+  color: #7A3222;
   font-size: 1.875rem;
   font-weight: 100;
 }
