@@ -1,65 +1,42 @@
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
-
-{% if page.url != "/" %}
-<header>
-  <div class="container-md">
-    <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        <p>&nbsp;</p>
-      </div>
-    </div>
-  </div>
-</header>
-{% else %}
+{% if page.url == "/" %}
 <header class="header-section">
-  <div class="intro-header {% if page.cover-img %} big-img {% endif %}">
-
+  <div class="intro-header">
     <div class="container-md">
       <div class="row">
         <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
           <div class="{{ include.type }}-heading">
             <h1 class="home-cover-brand">Vacantes Panamá</h1>
-            <hr class="small" style="border-color: #999;">
-            <span class="{{ include.type }}-subheading" style="color:#999;">Tu lista de empleos en Panamá</span>
-
+            <span class="slogan">Tu lista de empleos en Panamá</span>
           </div>
         </div>
       </div>
     </div>
-
   </div>
-
-
 </header>
+{% else %}
 
 {% endif %}
 
-
 <section>
-
-
-  
-
-
-
-  <div style="padding-top: 15px;"></div>
+<div style="padding-top: 15px;"></div>
   <div class="container">
       <div class="form-row">
         
           <div class="col-9 col-md-8 col-xl-10 offset-md-1">
           <form action="/search/" method="get">
             <div class="form-group has-search">
-              <span class="fa fa-search form-control-feedback" style="line-height: 2.1875rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path></svg></span>
+              <span class="fa fa-search form-control-feedback" style="line-height: 2.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path></svg></span>
               <input class="form-control input-block-level form-control-md" type="text" required="" autocomplete="off" placeholder="Buscar empleo"
                 id="search-box" name="query">
             </div>
           </form>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-secondary" id="job-cats-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          <button type="button" class="btn btn-primary" id="job-cats-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+              <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/>
             </svg>
           </button>
         </div>
@@ -68,7 +45,7 @@
 
 
     <div style="padding-top: 15px;"></div>
-    <div id="job-cats-content" style="display: none;">
+    <div id="job-cats-content" class="hideme">
       <div class="row">
         <div class="col-md-10 offset-md-1">
           <div class="title-guide">Empleos por área:</div>
@@ -80,7 +57,7 @@
 
           {% for category in site.data.categories.menu %}
           <a href="{{ category[1] }}"><div style="display:block;"><img src="/assets/img/icon-folder.svg" width="20px" alt="email">&nbsp;{{ category[0] }}<div></a>
-            <div style="clear: both;"></div>
+            <div style="clear: both;margin-bottom: 6px;"></div>
           {% endfor %}
        
         </div>

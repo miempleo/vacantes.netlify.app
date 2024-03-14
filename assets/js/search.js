@@ -15,7 +15,7 @@
           appendString += '<div class="post-entry"><strong>Descripción:</strong> ' + item.description + '</div>';
         }
         if(item.requirements.length){
-          appendString += '<div class="requisito-view"><span class="dots"></span><span class="more"><div class="post-entry"><strong>Requisitos:</strong></div>' + item.requirements + '</span><button class="read">ver requisitos</button></div>';
+          appendString += '<div class="requisito-view"><span class="dots"></span><span class="more"><div class="post-entry"><strong>Requisitos:</strong></div>' + item.requirements + '</span></div>';
         }
         appendString += '<div class="post-entry" style="margin-top: 5px;"><strong>Contacto:</strong></div>';        
         if(item.whatsapp.length){

@@ -30,7 +30,7 @@
         {% endif %}
 
       </a><!--clickeable-->
-      <div id="job-details-{{forloop.index}}" style="display: none;">
+      <div id="job-details-{{forloop.index}}" class="hideme">
         {% if post.company %}
         <div><strong>Empresa:</strong> {{ post.company | strip_html }}</div>
         {% endif %}
