@@ -1,0 +1,17 @@
+---
+
+layout: post
+company: Tienda Shark Ninja
+title: Vendedor de tienda
+description: Buscamos a personas entusiastas, con ganas de trabajar, capaz de liderar y con experiencia como vendedor en tiendas.
+requirements: Experiencia como vendedor dentro de tienda - Ser organizado y proactivo - Buen uso del Office - Trabajar en equipo y bajo presión - Manejo de caja, facturación, y atención a clientes
+contact_email: 
+contact_whatsapp: 68518364
+contact_phone: 
+contact_url: 
+province: Panamá
+tags: [ ventas  ]
+category: mkt_ventas
+source: encuentra24
+
+---
