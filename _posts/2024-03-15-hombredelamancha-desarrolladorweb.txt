@@ -1,0 +1,17 @@
+---
+
+layout: post
+company: Hombre de la Mancha
+title: Desarrollador Web
+description: Encargado(a) de página web
+requirements: Conocimiento en Shopify - Manejo de websites - programación y estudios relacionados - 1 año de experiencia
+contact_email: comercial@hombredelamancha.com
+contact_whatsapp: 
+contact_phone: 
+contact_url: 
+province: Panamá
+tags: [ web ]
+category: it
+source: ig
+
+---
