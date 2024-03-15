@@ -9,7 +9,9 @@ html {
 }
 
 body {
-  font-family: "Figtree", sans-serif;
+  /*font-family: "Figtree", sans-serif;*/
+  font-family: Tahoma, Verdana, sans-serif;
+  
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
@@ -30,7 +32,8 @@ p {
   margin: 1.875rem 0;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Vazirmatn", sans-serif;
+  /*font-family: "Vazirmatn", sans-serif;*/
+  font-family: Tahoma, Verdana, sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   line-height: 1.1;
@@ -146,7 +149,8 @@ color: #aaa;
 
 .home-cover-brand{
 
-  font-family: "Figtree", sans-serif;
+  /*font-family: "Figtree", sans-serif;*/
+  font-family: Tahoma, Verdana, sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
@@ -195,7 +199,8 @@ footer .list-inline {
   margin-bottom: 1.875rem;
 }
 footer .copyright {
-  font-family: "Figtree", sans-serif;
+  /*font-family: "Figtree", sans-serif;*/
+  font-family: Tahoma, Verdana, sans-serif;
   font-optical-sizing: auto;
   text-align: center;
   margin-bottom: 0;
@@ -251,7 +256,8 @@ footer .footer-custom-content {
 
 .post-preview a {
   text-decoration: none;
-  font-family: "Figtree", sans-serif;
+  /*font-family: "Figtree", sans-serif;*/
+  font-family: Tahoma, Verdana, sans-serif;
   font-optical-sizing: auto;
   color: {{ site.text-col | default: "#000" }};
 }
@@ -278,7 +284,8 @@ footer .footer-custom-content {
   font-size: 1.125rem;
   font-style: italic;
   margin: 0 0 0.625rem;
-  font-family: "Figtree", sans-serif;
+  /*font-family: "Figtree", sans-serif;*/
+  font-family: Tahoma, Verdana, sans-serif;
   font-optical-sizing: auto;
 }
 .post-heading .post-meta {
@@ -298,7 +305,8 @@ footer .footer-custom-content {
 }
 
 .title-heading h1, .title-guide{
-  font-family: "Vazirmatn", sans-serif;
+  /*font-family: "Vazirmatn", sans-serif;*/
+  font-family: Tahoma, Verdana, sans-serif;
   font-optical-sizing: auto;
   color: #7A3222;
   font-size: 1.875rem;
