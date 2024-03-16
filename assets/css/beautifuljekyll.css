@@ -10,10 +10,9 @@ html {
 
 body {
   /*font-family: "Figtree", sans-serif;*/
-  font-family: Tahoma, Verdana, sans-serif;
-  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.1875rem;
   color: #606060;
@@ -33,7 +32,7 @@ p {
 }
 h1,h2,h3,h4,h5,h6 {
   /*font-family: "Vazirmatn", sans-serif;*/
-  font-family: Tahoma, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   line-height: 1.1;
@@ -150,7 +149,7 @@ color: #aaa;
 .home-cover-brand{
 
   /*font-family: "Figtree", sans-serif;*/
-  font-family: Tahoma, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
@@ -200,11 +199,12 @@ footer .list-inline {
 }
 footer .copyright {
   /*font-family: "Figtree", sans-serif;*/
-  font-family: Tahoma, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
+  font-weight: 100;
 }
 footer .theme-by {
   text-align: center;
@@ -213,7 +213,7 @@ footer .theme-by {
 footer .footer-custom-content {
   text-align: center;
   margin-bottom: 0.9375rem;
-  font-family: "Figtree", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
 }
 
@@ -257,7 +257,7 @@ footer .footer-custom-content {
 .post-preview a {
   text-decoration: none;
   /*font-family: "Figtree", sans-serif;*/
-  font-family: Tahoma, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
   color: {{ site.text-col | default: "#000" }};
 }
@@ -285,7 +285,7 @@ footer .footer-custom-content {
   font-style: italic;
   margin: 0 0 0.625rem;
   /*font-family: "Figtree", sans-serif;*/
-  font-family: Tahoma, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
 }
 .post-heading .post-meta {
@@ -302,11 +302,12 @@ footer .footer-custom-content {
   width: 100%;
   margin-top: 0.4rem;
   color: #606060;
+  font-weight: 100;
 }
 
 .title-heading h1, .title-guide{
   /*font-family: "Vazirmatn", sans-serif;*/
-  font-family: Tahoma, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
   color: #7A3222;
   font-size: 1.875rem;
@@ -363,7 +364,7 @@ footer .footer-custom-content {
   font-size: 1.6875rem;
   line-height: 1.1;
   display: block;
-  font-family: "Figtree", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   margin: 0.625rem 0 0;
@@ -406,7 +407,7 @@ footer .footer-custom-content {
 }
 
 .pagination .page-item .page-link {
-  font-family: "Figtree", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
   font-optical-sizing: auto;
   text-transform: uppercase;
   font-size: 0.875rem;
