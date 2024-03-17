@@ -36,10 +36,11 @@
           {% if post.company %}
           <div><strong>Empresa:</strong> {{ post.company | strip_html }}</div>
           {% endif %}
+
+          {% if post.requirements %}
           <div style="margin: 6px;"></div>
           <button role="button" aria-label="Mostrar detalles" class="button-24 job-entry" id="{{forloop.index}}">Ver Requisitos</button>
           
-          {% if post.requirements %}
           <div id="job-details-{{forloop.index}}" class="hideme">
           <div><strong>Requisitos:</strong></div>
           <ul>
