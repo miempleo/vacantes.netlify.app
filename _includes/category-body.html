@@ -5,73 +5,72 @@
 {% if category %}
 {% assign posts = paginator.posts | default: site.posts %}
 
+<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
 
-  {% for post in site.categories[category] %}
+  {% assign sorted-posts = site.posts | where: "category", category %}
+  {% for post in sorted-posts %}
 
+  
   {% assign mod = forloop.index | modulo:2 %}
   {% if mod == 0 %}
-  {% assign color = "255,0,0,0" %}
+    {% assign color = "255,0,0,0" %}
   {% else %}
-  {% assign color = "250,248,248,0.5" %}
+    {% assign color = "250,248,248,0.5" %}
   {% endif %}
 
-  <li class="post-preview" id="job-id-{{forloop.index}}">
+  <li class="post-preview" id="job-id-{{forloop.index}}"> 
     <article>
-      <a href="#job-{{forloop.index}}" class="job-entry" id="{{forloop.index}}" style="display: block;">
-        <h2 class="post-title">{{ post.title | strip_html }}</h2>
-        <small>
-          {% assign date_format = site.date_format | default: "%d-%m-%Y" %}
-          Publicado: {{ post.date | date: date_format }}
-        </small>
+        
+      <h2 class="post-title">{{ post.title | strip_html }}</h2>
+      <small>
+        {% assign date_format = site.date_format | default: "%d-%m-%Y" %}
+        Publicado: {{ post.date | date: date_format }} 
+      </small>
 
-        {% if post.description %}
-        <div class="post-entry"> {{ post.description | strip_html }}</div>
-        {% endif %}
+      {% if post.description %}
+      <div class="post-entry"> {{ post.description | strip_html }}</div>
+      {% endif %}
 
-      </a><!--clickeable-->
-      <div id="job-details-{{forloop.index}}" class="hideme">
-        {% if post.company %}
-        <div><strong>Empresa:</strong> {{ post.company | strip_html }}</div>
-        {% endif %}
-
-        {% if post.requirements %}
-        <div><strong>Requisitos:</strong></div>
-        <ul>
-          {% assign requisitos = post.requirements | split: "-" %}
-          {% for requisito in requisitos %}
-          <li>
-            {{- requisito -}}
-          </li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        <div style="margin-top:5px;"><strong>Contacto:</strong><br />
-          {% if post.contact_whatsapp %}
-          <a href="https://api.whatsapp.com/send?phone=507{{ post.contact_whatsapp | strip_html }}" target="_blank">
-            <div style="display: inline-flex;"><img src="/assets/img/icon-whatsapp.svg" width="20px"
-                alt="WhatsApp">&nbsp;{{
-              post.contact_whatsapp | strip_html }}</div>
-          </a>
-          <div style="clear: both;"></div>
+      <div>
+          {% if post.company %}
+          <div><strong>Empresa:</strong> {{ post.company | strip_html }}</div>
           {% endif %}
-          {% if post.contact_phone %}
-          {{ post.contact_phone | strip_html }}<br />
+          <div style="margin: 6px;"></div>
+          <button role="button" aria-label="Mostrar detalles" class="button-24 job-entry" id="{{forloop.index}}">Ver Requisitos</button>
+          
+          {% if post.requirements %}
+          <div id="job-details-{{forloop.index}}" class="hideme">
+          <div><strong>Requisitos:</strong></div>
+          <ul>
+            {% assign requisitos = post.requirements | split: "-" %}
+            {% for requisito in requisitos %}
+            <li>
+              {{- requisito -}}
+            </li>
+            {% endfor %}
+          </ul>
+          </div>
           {% endif %}
-          {% if post.contact_email %}
-          <a href="mailto:{{ post.contact_email | strip_html }}">
-            <div style="display: inline-flex;"><img src="/assets/img/icon-mail.svg" width="20px" alt="email">&nbsp;{{
-              post.contact_email | strip_html }}</div>
-          </a>
-          <br />
+          <div style="margin-top:5px;"><strong>Contacto:</strong><br />
+            {% if post.contact_whatsapp %}
+          <a href="https://api.whatsapp.com/send?phone=507{{ post.contact_whatsapp | strip_html }}"
+              target="_blank"><div style="display: inline-flex;"><img src="/assets/img/icon-whatsapp.svg" width="20px" alt="WhatsApp">&nbsp;{{
+              post.contact_whatsapp | strip_html }}</div></a>
+              <div style="clear: both;"></div>
           {% endif %}
-          {% if post.contact_url %}
-          <a href="{{ post.contact_url | strip_html }}" target="_blank">
-            <div style="display: inline-flex;"><img src="/assets/img/icon-url.svg" width="20px" alt="URL">&nbsp;{{
-              post.contact_url | truncate: 40 }}</div>
-          </a>
-          {% endif %}
-        </div>
+            {% if post.contact_phone %}
+            {{ post.contact_phone | strip_html }}<br />
+            {% endif %}
+            {% if post.contact_email %}
+            <a href="mailto:{{ post.contact_email | strip_html }}"><div style="display: inline-flex;"><img src="/assets/img/icon-mail.svg" width="20px" alt="email">&nbsp;{{ post.contact_email | strip_html }}</div></a>
+            <br />
+            {% endif %}
+            {% if post.contact_url %}
+            <a href="{{ post.contact_url | strip_html }}"
+              target="_blank"><div style="display: inline-flex;"><img src="/assets/img/icon-url.svg" width="20px" alt="URL">&nbsp;{{ post.contact_url | truncate: 40 }}</div></a>
+            {% endif %}
+          </div>
       </div>
     </article>
   </li>

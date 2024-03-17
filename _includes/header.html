@@ -19,8 +19,14 @@
 
 {% endif %}
 
-<section>
-<div style="padding-top: 15px;"></div>
+
+
+
+{% if page.url != "/" %}
+  <section style="margin-top: 85px;">
+{% else %}
+  <section style="margin-top: 20px;">
+{% endif %}
   <div class="container">
       <div class="form-row">
         
