@@ -45,13 +45,13 @@ var normaliseSpelling = function (builder) {
         }
         appendString += '<div class="post-entry" style="margin-top: 5px;"><strong>Contacto:</strong></div>';        
         if(item.whatsapp.length){
-          appendString +=  '<div style="display: inline-flex;"><img src="/assets/img/icon-whatsapp.svg" width="20px" alt="email">&nbsp;<a href="https://api.whatsapp.com/send?phone=507'+ item.whatsapp + '" target="_blank">' + item.whatsapp + '</a></div><br/>';
+          appendString +=  '<div ><img src="/assets/img/icon-whatsapp.svg" width="20px" alt="email">&nbsp;<a href="https://api.whatsapp.com/send?phone=507'+ item.whatsapp + '" target="_blank">' + item.whatsapp + '</a></div><br/>';
         }
         if(item.email.length){
-          appendString +=  '<div style="display: inline-flex;"><img src="/assets/img/icon-mail.svg" width="20px" alt="email">&nbsp;<a href="mailto:'+ item.email + '">' + item.email + '</a></div><br/>';
+          appendString +=  '<div><img src="/assets/img/icon-mail.svg" width="20px" alt="email">&nbsp;<a href="mailto:'+ item.email + '">' + item.email + '</a></div><br/>';
         }
         if(item.url.length){
-          appendString +=  '<div style="display: inline-flex;"><img src="/assets/img/icon-url.svg" width="20px" alt="url">&nbsp;<a href="'+ item.url + '" target="_blank">Ir a un URL externo</a></div><br/>';
+          appendString +=  '<div><img src="/assets/img/icon-url.svg" width="20px" alt="url">&nbsp;<a href="'+ item.url + '" target="_blank">Ir a un URL externo</a></div><br/>';
         }
         appendString += '</article></li>';      
       }
