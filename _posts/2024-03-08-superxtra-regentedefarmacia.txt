@@ -10,7 +10,7 @@ contact_whatsapp:
 contact_phone: 
 contact_url: https://forms.office.com/Pages/ResponsePage.aspx?id=7SqU6tIirke3xGWNPHLRUoRob1_uo9xDsWbWWJEmWjFURDFIUlo0WUI5NTU0SjYxRUJQQUc0Q0tYRS4u&origin=QRCode
 province: Panamá
-tags: [ farmacia ]
+tags: [ farmacia farmaceutico ]
 category: salud_belleza
 source: ig
 

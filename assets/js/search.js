@@ -1,3 +1,29 @@
+var normaliseSpelling = function (builder) {
+  var pipelineFunction = function ( token ){
+    const tokenString = token.toString();
+    const rewrittenToken = tokenString.replace(
+      /([àáâãäå])|([çčć])|([èéêë])|([ìíîï])|([ñ])|([òóôõöø])|([ùúûü])/ig, 
+      function (tokenString, a, c, e, i, n, o, u ) {
+        if (a) return 'a';
+        if (c) return 'c';
+        if (e) return 'e';
+        if (i) return 'i';
+        if (n) return 'n';
+        if (o) return 'o';
+        if (u) return 'u';
+    });
+  
+    return token.update(function () { 
+      return rewrittenToken; 
+    })
+  } 
+  // Register the pipeline function so the index can be serialised
+  lunr.Pipeline.registerFunction(pipelineFunction, 'normaliseSpelling')
+  // Add the pipeline function to both the indexing pipeline and the
+  // searching pipeline
+  builder.pipeline.before(lunr.stemmer, pipelineFunction)
+  builder.searchPipeline.before(lunr.stemmer, pipelineFunction)
+};
 (function() {
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
@@ -52,29 +78,33 @@
   var searchTerm = getQueryVariable('query');
 
   if (searchTerm) {
+
     document.getElementById('search-box').setAttribute("value", searchTerm);
 
     // Initalize lunr with the fields it will be searching on. I've given title
     // a boost of 10 to indicate matches on this field are more important.
+
     var idx = lunr(function () {
+
+      this.use(normaliseSpelling)
+
       this.field('id');
-      this.field('title', { boost: 10 });
+      this.field('title');
+      this.field('company');
       this.field('province');
-      this.field('category');
       this.field('tags');
+
+      for (var key in window.store) { 
+        this.add({
+          'id': key,
+          'title': window.store[key].title,
+          'company': window.store[key].company,
+          'province': window.store[key].province,
+          'tags': window.store[key].tags
+        });
+      }
     });
-
-    for (var key in window.store) { // Add the data to lunr
-      idx.add({
-        'id': key,
-        'title': window.store[key].title,
-        'province': window.store[key].province,
-        'category': window.store[key].category,
-        'tags': window.store[key].tags
-      });
-
-      var results = idx.search(searchTerm); // Get lunr to perform a search
-      displaySearchResults(results, window.store); // We'll write this in the next section
-    }
+    var results = idx.search(searchTerm);
+    displaySearchResults(results, window.store);
   }
 })();

@@ -11,7 +11,7 @@ contact_phone:
 contact_url:
 province: Panamá
 thumbnail_img: /assets/img/thumb.png
-tags: [cocinero]
+tags: [cocinero chef]
 category: "gastro_tur"
 source: IG
 

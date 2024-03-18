@@ -10,7 +10,7 @@ contact_whatsapp: 68518364
 contact_phone: 
 contact_url: 
 province: Panamá
-tags: [ ventas  ]
+tags: [ ventas vendedor  ]
 category: mkt_ventas
 source: encuentra24
 

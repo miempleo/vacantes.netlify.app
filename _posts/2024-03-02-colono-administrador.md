@@ -11,7 +11,7 @@ contact_phone:
 contact_url:
 province: Bocas del Toro
 thumbnail_img: /assets/img/thumb.png
-tags: [ agro agronomia ]
+tags: [ agro agronomia administrador ]
 category: "admin"
 source:
 

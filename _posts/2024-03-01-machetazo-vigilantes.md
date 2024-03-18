@@ -11,7 +11,7 @@ contact_phone:
 contact_url:
 province: 
 thumbnail_img: /assets/img/thumb.png
-tags: [ seguridad ]
+tags: [ seguridad vigilante oficios ]
 category: oficios
 source: IG
 

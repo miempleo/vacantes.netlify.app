@@ -10,7 +10,7 @@ contact_whatsapp:
 contact_phone: 
 contact_url: 
 province: Panamá
-tags: [ web ]
+tags: [ web website php webmaster ]
 category: it
 source: ig
 

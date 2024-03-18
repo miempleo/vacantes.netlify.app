@@ -10,7 +10,7 @@ contact_whatsapp: 61890534
 contact_phone: 
 contact_url: 
 province: Panamá
-tags: [ rrss ]
+tags: [ rrss diseño gráfico cm redes sociales diseñador ]
 category: mkt_ventas
 source: encuentra24
 

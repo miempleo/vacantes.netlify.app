@@ -11,7 +11,7 @@ contact_phone:
 contact_url:
 province: Herrera
 thumbnail_img: /assets/img/thumb.png
-tags: [ almacén ]
+tags: [ almacén mercaderista ]
 category: admin
 source:
 

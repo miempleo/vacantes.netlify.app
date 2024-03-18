@@ -11,7 +11,7 @@ contact_phone:
 contact_url:
 province: Panamá
 thumbnail_img: /assets/img/thumb.png
-tags: [ colegio escuela ]
+tags: [ colegio escuela psicologo ]
 category: salud_belleza
 source: Linkedin
 

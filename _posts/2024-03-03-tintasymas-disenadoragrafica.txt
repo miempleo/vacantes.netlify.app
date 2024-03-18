@@ -10,7 +10,7 @@ contact_whatsapp: 67268407
 contact_phone: 
 contact_url: 
 province: Panamá
-tags: [ diseño rrss photoshop illustrator redes ]
+tags: [ diseño rrss photoshop illustrator redes sociales diseñador ]
 category: mkt_ventas
 source: encuentra24
 

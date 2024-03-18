@@ -10,7 +10,7 @@ contact_whatsapp: 60114756
 contact_phone: 
 contact_url: 
 province: Panamá
-tags: [ jardinería ]
+tags: [ jardinería jardinero ayudante ]
 category: oficios
 source: encuentra24
 

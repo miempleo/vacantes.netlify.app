@@ -11,7 +11,7 @@ contact_phone:
 contact_url:
 province: Veraguas
 thumbnail_img: /assets/img/thumb.png
-tags: [ farmacia ]
+tags: [ farmacia farmaceutico ]
 category: salud_belleza
 source:
 

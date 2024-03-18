@@ -8,7 +8,7 @@
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
 
-  {% assign sorted-posts = site.posts | where: "category", category %}
+  {% assign sorted-posts = site.posts | where: "category", category  %}
   {% for post in sorted-posts %}
 
   
@@ -107,3 +107,5 @@
 {% else %}
 No se ha definido una categoría
 {% endif %}
+
+
