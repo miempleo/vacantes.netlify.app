@@ -37,6 +37,7 @@ layout: page
 
       <div>
           {% if post.company %}
+          <div style="margin-top: 6px;"></div>
           <div><strong>Empresa:</strong> {{ post.company | strip_html }}</div>
           {% endif %}
 
@@ -58,18 +59,20 @@ layout: page
           {% endif %}
           <div style="margin-top:8px;"><strong>Contacto:</strong><br />
             {% if post.contact_whatsapp %}
+            <div style="margin-top: 6px;"></div>
           <a href="https://api.whatsapp.com/send?phone=507{{ post.contact_whatsapp | strip_html }}" target="_blank">
             <div class="icon baseline">
               <img src="/assets/img/icon-whatsapp.svg" width="20px" alt="WhatsApp">
             </div>&nbsp;{{
             post.contact_whatsapp | strip_html }}
-          </a>
+          </a><br/>
           {% endif %}
             {% if post.contact_phone %}
-            {{ post.contact_phone | strip_html }}<br />
+            <div style="margin-top: 6px;"></div>
+            {{ post.contact_phone | strip_html }}
             {% endif %}
             {% if post.contact_email %}
-
+            <div style="margin-top: 6px;"></div>
             <a href="mailto:{{ post.contact_email | strip_html }}" target="_blank">
               <div class="icon baseline">
                 <img src="/assets/img/icon-mail.svg" width="20px" alt="Email">
@@ -78,12 +81,12 @@ layout: page
 
             {% endif %}
             {% if post.contact_url %}
-
+            <div style="margin-top: 6px;"></div>
             <a href="{{ post.contact_url | strip_html }}" target="_blank">
               <div class="icon baseline">
                 <img src="/assets/img/icon-url.svg" width="20px" alt="URL">
               </div>&nbsp;{{ post.contact_url | truncate: 40 }}
-            </a>
+            </a><br/>
             {% endif %}
           </div>
       </div>

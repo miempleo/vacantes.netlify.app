@@ -1,0 +1,17 @@
+---
+
+layout: post
+company: Parts Trading Panama
+title: Gerente de sucursal
+description: Se busca Gerente de sucursal en Santiago de Veraguas
+requirements: 
+contact_email: asistente@partstradingpanama.com
+contact_whatsapp: 66746720
+contact_phone: 
+contact_url: 
+province: Veraguas
+tags: [ gerente santiago veraguas ]
+category: admin
+source: ig
+
+---

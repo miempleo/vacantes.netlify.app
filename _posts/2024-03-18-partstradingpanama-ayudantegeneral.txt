@@ -1,0 +1,17 @@
+---
+
+layout: post
+company: Parts Trading Panama
+title: Ayudante General
+description: Se busca ayudante general en Santiago de Veraguas
+requirements: 
+contact_email: asistente@partstradingpanama.com
+contact_whatsapp: 66746720
+contact_phone: 
+contact_url: 
+province: Veraguas
+tags: [ ayudante general santiago veraguas ]
+category: oficios
+source: ig
+
+---
