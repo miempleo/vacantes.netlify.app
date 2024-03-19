@@ -88,7 +88,7 @@ var normaliseSpelling = function (builder) {
 
       this.use(normaliseSpelling)
 
-      this.field('id');
+      this.ref('id');
       this.field('title');
       this.field('company');
       this.field('province');
