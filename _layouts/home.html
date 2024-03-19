@@ -26,10 +26,10 @@ layout: page
     <article>
         
       <h2 class="post-title">{{ post.title | strip_html }}</h2>
-      <small>
+      <div style="font-weight: 600;margin-bottom: 10px;">
         {% assign date_format = site.date_format | default: "%d-%m-%Y" %}
-        Publicado: {{ post.date | date: date_format }} 
-      </small>
+        Publicado {{ post.date | timeago }}
+      </div>
 
       {% if post.description %}
       <div class="post-entry"> {{ post.description | strip_html }}</div>

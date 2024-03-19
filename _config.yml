@@ -291,3 +291,14 @@ plugins:
 
 sass:
     style: compressed
+
+
+jekyll_timeago:
+  depth: 1
+  threshold: 0
+  translations_path: '/_locales-timeago/*.yaml'
+  default_locale: 'es'
+  fallbacks: true
+  available_locales:
+    - 'en'
+    - 'es'  
